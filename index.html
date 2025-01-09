@@ -6,10 +6,10 @@
     <title>Jay Ramesh Patil - Resume</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background: linear-gradient(to right, #e3f2fd, #ffffff);
             color: #333;
             line-height: 1.6;
         }
@@ -17,27 +17,32 @@
             max-width: 900px;
             margin: 20px auto;
             padding: 20px;
-            background: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
         }
         .header {
             text-align: center;
+            margin-bottom: 20px;
         }
         .header h1 {
+            font-size: 2.5em;
             margin-bottom: 10px;
-            color: #4CAF50;
+            color: #1565c0;
         }
         .header p {
             font-size: 1.2em;
+            color: #555;
         }
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         .section h2 {
-            border-bottom: 2px solid #4CAF50;
+            border-bottom: 2px solid #1565c0;
             padding-bottom: 5px;
             margin-bottom: 15px;
-            color: #4CAF50;
+            color: #1565c0;
+            font-size: 1.5em;
         }
         .section ul {
             list-style: none;
@@ -45,6 +50,10 @@
         }
         .section ul li {
             margin-bottom: 10px;
+            background: #f1f8e9;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .contact-info, .soft-skills, .technical-skills, .certifications, .projects {
             display: flex;
@@ -54,11 +63,27 @@
         .contact-info div, .soft-skills div, .technical-skills div, .certifications div, .projects div {
             flex: 1 1 45%;
         }
+        .contact-info div a {
+            color: #1565c0;
+            text-decoration: none;
+        }
+        .contact-info div a:hover {
+            text-decoration: underline;
+        }
         .footer {
             text-align: center;
             margin-top: 20px;
             font-size: 0.9em;
             color: #555;
+        }
+        .badge {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #1565c0;
+            color: #ffffff;
+            border-radius: 5px;
+            font-size: 0.9em;
+            margin-right: 5px;
         }
     </style>
 </head>
@@ -72,25 +97,27 @@
         <div class="section contact">
             <h2>Contact</h2>
             <div class="contact-info">
-                <div>Email: patiljay8118@gmail.com</div>
-                <div>Phone: +91 9326204718</div>
-                <div>LinkedIn: <a href="https://linkedin.com/in/Jay-R-Patil">linkedin.com/in/Jay-R-Patil</a></div>
+                <div>Email: <a href="mailto:patiljay8118@gmail.com">patiljay8118@gmail.com</a></div>
+                <div>Phone: <a href="tel:+919326204718">+91 9326204718</a></div>
+                <div>LinkedIn: <a href="https://linkedin.com/in/Jay-R-Patil" target="_blank">linkedin.com/in/Jay-R-Patil</a></div>
             </div>
         </div>
 
         <div class="section soft-skills">
             <h2>Soft Skills</h2>
-            <div>Collaborator</div>
-            <div>Leader</div>
-            <div>Adaptable</div>
+            <div class="badge">Collaborator</div>
+            <div class="badge">Leader</div>
+            <div class="badge">Adaptable</div>
         </div>
 
         <div class="section technical-skills">
             <h2>Technical Skills</h2>
-            <div><strong>Programming Languages:</strong> Python, SQL, Bash</div>
-            <div><strong>Cloud & DevOps:</strong> AWS (EC2, S3, RDS), Docker, Kafka, Jenkins, GitHub Actions, Terraform</div>
-            <div><strong>Data Analysis:</strong> Python (NumPy, Pandas, Matplotlib, Seaborn), SQL (Joins, Window Functions), Power BI, Tableau</div>
-            <div><strong>Other Tools:</strong> Git, GitHub, Microsoft Office</div>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, SQL, Bash</li>
+                <li><strong>Cloud & DevOps:</strong> AWS (EC2, S3, RDS), Docker, Kafka, Jenkins, GitHub Actions, Terraform</li>
+                <li><strong>Data Analysis:</strong> Python (NumPy, Pandas, Matplotlib, Seaborn), SQL (Joins, Window Functions), Power BI, Tableau</li>
+                <li><strong>Other Tools:</strong> Git, GitHub, Microsoft Office</li>
+            </ul>
         </div>
 
         <div class="section academic">
