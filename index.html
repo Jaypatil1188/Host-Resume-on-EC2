@@ -1,46 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Resume</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Ramesh Patil - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+        }
+        .header h1 {
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+        .header p {
+            font-size: 1.2em;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #4CAF50;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+        }
+        .contact-info, .soft-skills, .technical-skills, .certifications, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .contact-info div, .soft-skills div, .technical-skills div, .certifications div, .projects div {
+            flex: 1 1 45%;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-	<div class="container">
-		<header>
-			<h1>A Monk in Cloud</h1>
-			<p>Web Developer</p>
-		</header>
-		<section>
-			<h2>Summary</h2>
-			<p>A highly motivated web developer with 6+ years of experience creating dynamic and responsive web applications. Strong skills in HTML, CSS, and JavaScript, with a passion for creating visually appealing and user-friendly interfaces. Committed to staying up-to-date with the latest trends and technologies in the industry.</p>
-		</section>
-		<section>
-			<h2>Skills</h2>
-			<ul>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>JavaScript</li>
-				<li>jQuery</li>
-				<li>Bootstrap</li>
-				<li>React</li>
-			</ul>
-		</section>
-		<section>
-			<h2>Experience</h2>
-			<h3>Web Developer, XYZ Company</h3>
-			<p>Developed and maintained multiple company websites using HTML, CSS, and JavaScript. Collaborated with designers and project managers to create visually appealing and user-friendly interfaces. Conducted regular code reviews to ensure high-quality and efficient code. </p>
-			<h3>Web Developer, ABC Agency</h3>
-			<p>Designed and implemented custom WordPress themes and plugins. Worked closely with clients to gather requirements and provide technical support. Conducted regular testing and debugging to ensure optimal performance.</p>
-		</section>
-		<section>
-			<h2>Education</h2>
-			<h3>Bachelor of Science in Computer Science</h3>
-			<p>University of ABC, Graduated May 20XX</p>
-		</section>
-		<section id="projects">
-			<h2>Projects</h2>
-			<p>Some text about your projects...</p>
-		</section>
-	</div>
+    <div class="container">
+        <div class="header">
+            <h1>Jay Ramesh Patil</h1>
+            <p>A motivated fresher pursuing MCA (completed Semester 3), eager to contribute to cloud-based solutions and gain hands-on experience in the dynamic cloud domain.</p>
+        </div>
+
+        <div class="section contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div>Email: patiljay8118@gmail.com</div>
+                <div>Phone: +91 9326204718</div>
+                <div>LinkedIn: <a href="https://linkedin.com/in/Jay-R-Patil">linkedin.com/in/Jay-R-Patil</a></div>
+            </div>
+        </div>
+
+        <div class="section soft-skills">
+            <h2>Soft Skills</h2>
+            <div>Collaborator</div>
+            <div>Leader</div>
+            <div>Adaptable</div>
+        </div>
+
+        <div class="section technical-skills">
+            <h2>Technical Skills</h2>
+            <div><strong>Programming Languages:</strong> Python, SQL, Bash</div>
+            <div><strong>Cloud & DevOps:</strong> AWS (EC2, S3, RDS), Docker, Kafka, Jenkins, GitHub Actions, Terraform</div>
+            <div><strong>Data Analysis:</strong> Python (NumPy, Pandas, Matplotlib, Seaborn), SQL (Joins, Window Functions), Power BI, Tableau</div>
+            <div><strong>Other Tools:</strong> Git, GitHub, Microsoft Office</div>
+        </div>
+
+        <div class="section academic">
+            <h2>Academic Details</h2>
+            <ul>
+                <li><strong>MCA (Semester 3):</strong> Hiray Institute of Computer Applications (CGPA: 9.14/10)</li>
+                <li><strong>BSc-IT:</strong> Satish Pradhan Dnyanasadhana College (72.12%)</li>
+                <li><strong>HSC:</strong> Satish Pradhan Dnyanasadhana College (52.46%)</li>
+                <li><strong>SSC:</strong> Bal Vidya Mandir (81.60%)</li>
+            </ul>
+        </div>
+
+        <div class="section certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>AWS Internship Certification by BRAIN O VISION</li>
+                <li>NPTEL Online Certification for Cloud Computing</li>
+                <li>Business Analysis Fundamentals by Udemy</li>
+                <li>Python for Data Sciences by NPTEL</li>
+                <li>Career Essentials in Business Analysis by Microsoft and LinkedIn</li>
+            </ul>
+        </div>
+
+        <div class="section projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Python Project for Data Analysis of Diwali Shopping:</strong> Exploratory Data Analysis (EDA) using Python.</li>
+                <li><strong>Deploying Netflix Clone with EKS Cluster:</strong> Deployed a scalable Netflix Clone application using Jenkins, Docker, and Kubernetes.</li>
+                <li><strong>Game Creation using Docker & AWS EBS:</strong> Designed a lightweight game application with Elastic Beanstalk and Auto Scaling.</li>
+                <li><strong>Spotify Playlist Creation:</strong> Automated Spotify playlist creation using Terraform and Spotify API.</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>Date of Birth: 14th October 2002 | Languages: English, Hindi, Marathi | Address: Kisan Nager 3, Thane (W)</p>
+        </div>
+    </div>
 </body>
 </html>
